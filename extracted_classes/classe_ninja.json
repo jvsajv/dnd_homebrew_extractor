@@ -1,0 +1,458 @@
+{
+  "nome": "Ninja",
+  "dado_vida": 8,
+  "testes_resistencia": [
+    "Destreza",
+    "Inteligência"
+  ],
+  "proficiencias": {
+    "armaduras": [],
+    "armas": [
+      "Armas Simples",
+      "Besta de Mão",
+      "Katana (Espada Longa)",
+      "Wakisashi (Espada Curta)",
+      "Shuriken (Dados)"
+    ],
+    "ferramentas": [
+      "Ferramentas de Ladino",
+      "Kit de Venefício"
+    ]
+  },
+  "pericias_opcionais": {
+    "descricao": "Escolha quatro entre: Atletismo, Acrobacia, Punga, Furtividade, Investigação, Intuição, Percepção, Enganação",
+    "escolher": 4,
+    "opcoes": [
+      "Atletismo",
+      "Acrobacia",
+      "Punga",
+      "Furtividade",
+      "Investigação",
+      "Intuição",
+      "Percepção",
+      "Enganação"
+    ]
+  },
+  "equipamento_inicial": [],
+  "opcoes_equipamento": [
+    {
+      "descricao": "(a) uma Katana OU (b) uma Wakisashi",
+      "opcoes": [
+        [
+          "uma Katana"
+        ],
+        [
+          "uma Wakisashi"
+        ]
+      ]
+    },
+    {
+      "descricao": "(a) uma Wakisashi OU (b) uma Besta de Mão e 20 Flechas",
+      "opcoes": [
+        [
+          "uma Wakisashi"
+        ],
+        [
+          "uma Besta de Mão e 20 Flechas"
+        ]
+      ]
+    },
+    {
+      "descricao": "(a) um Conjunto de Assaltante OU (b) um Conjunto de Explorador OU (c) Conjunto de Ninja",
+      "opcoes": [
+        [
+          "Conjunto de Assaltante"
+        ],
+        [
+          "Conjunto de Explorador"
+        ],
+        [
+          "Conjunto de Ninja"
+        ]
+      ]
+    }
+  ],
+  "niveis_classe": "classes/ninja/niveis",
+  "multi_classe": {
+    "requisitos": [
+      "Destreza 13",
+      "Inteligência 13"
+    ],
+    "proficiencias": [
+      "Armas Simples",
+      "Besta de Mão",
+      "Katana (Espada Longa)",
+      "Wakisashi (Espada Curta)",
+      "Shuriken (Dados)"
+    ]
+  },
+  "subclasses": [
+    "Caminho Fantasma",
+    "Lobo Solitário",
+    "Shinobi"
+  ],
+  "descricao": "Ninjas são guerreiros invisíveis, assassinos especializados em camuflagem, truques, acrobacias e assassinato. Possuem habilidades físicas, mentais, espirituais e mágicas que compõem o ninjutsu. Preferem evitar confrontos diretos, agindo nas sombras e com precisão. A hierarquia do clã é fundamental para sua vida e missão.",
+  "caracteristicas": {
+    "pontos_vida": {
+      "dados_vida": "1d8 por nível de Ninja",
+      "primeiro_nivel": "8 + modificador de Constituição",
+      "niveis_posteriores": "1d8 (ou 5) + modificador de Constituição por nível após o primeiro"
+    },
+    "caracteristicas_por_nivel": {
+      "1": [
+        "Símbolos de Clã",
+        "Esquiva Ninja"
+      ],
+      "2": [
+        "Grande Salto (Força x2)"
+      ],
+      "3": [
+        "Caminho do Ninja"
+      ],
+      "4": [
+        "Aumento de Atributo"
+      ],
+      "5": [
+        "Golpe Preciso (+1d4)"
+      ],
+      "6": [
+        "Caminho do Ninja"
+      ],
+      "7": [
+        "Evasão"
+      ],
+      "8": [
+        "Aumento de Atributo"
+      ],
+      "9": [
+        "Caminho do Ninja"
+      ],
+      "10": [
+        "Golpe Preciso (+1d6)",
+        "Grande Salto (Força x3)"
+      ],
+      "11": [
+        "Aumento de Atributo"
+      ],
+      "12": [
+        "Caminho do Ninja"
+      ],
+      "13": [
+        "Golpe Preciso (+2d6)"
+      ],
+      "14": [
+        "Sempre Alerta"
+      ],
+      "15": [
+        "Aumento de Atributo"
+      ],
+      "16": [
+        "Caminho do Ninja"
+      ],
+      "17": [
+        "Golpe Preciso (+2d8)"
+      ],
+      "18": [
+        "Aumento de Atributo"
+      ],
+      "19": [
+        "Caminho do Ninja",
+        "Golpe Preciso (+3d8)"
+      ],
+      "20": [
+        "Aumento de Atributo"
+      ]
+    },
+    "golpe_preciso": {
+      "descricao": "Dano adicional nos ataques com armas usadas pelo ninja.",
+      "valores_por_nivel": {
+        "1": "1d4",
+        "10": "1d6",
+        "14": "2d6",
+        "18": "2d8",
+        "20": "3d8"
+      }
+    },
+    "esquiva_ninja": "Adiciona modificador de Inteligência à Classe de Armadura enquanto não estiver usando armadura.",
+    "grande_salto": {
+      "descricao": "Salto em distância ou altura usa duas vezes o valor de Força, sem precisar se mover 3 metros antes.",
+      "multiplicador_forca": {
+        "2": 2,
+        "11": 3
+      }
+    },
+    "evasao": "Quando sujeito a teste de resistência de Destreza para metade do dano, recebe nenhum dano se passar e metade se falhar.",
+    "sempre_alerta": "Não pode ser surpreendido e tem vantagem em ataques na primeira rodada contra inimigos que ainda não agiram."
+  },
+  "caminhos_do_ninja": {
+    "Caminho Fantasma": {
+      "descricao": "Ninjas que trilham caminhos sombrios e sinistros, manipulando energia dos mortos.",
+      "energia_espectral": {
+        "pontos_iniciais": 3,
+        "recuperacao": "Recupera todos os pontos após descanso longo",
+        "aumentos": {
+          "9": 5,
+          "14": 7
+        }
+      },
+      "habilidades": {
+        "Passo das Sombras": "Ação bônus para gastar 1 ponto de energia espectral e ficar invisível até o final do próximo turno. Atacar ou conjurar magias encerra o efeito.",
+        "Esquiva Fantasma": "Ação bônus para gastar 1 ponto de energia espectral e realizar ação de esquiva (nível 6).",
+        "Passo Fantasma": "No nível 9, pode escolher ficar invisível ou ir para o plano etéreo ao usar Passo das Sombras.",
+        "Golpe Fantasma": "No nível 14, pode gastar 1 ponto de energia espectral para que arma atinja alvos no plano etéreo.",
+        "Visão Fantasmagórica": "No nível 17, pode gastar 1 ponto de energia espectral para ver invisível e plano etéreo por até 1 minuto com concentração.",
+        "Mestre dos Planos": "No nível 20, Passo das Sombras e Passo Fantasma duram 1 minuto e requerem concentração."
+      }
+    },
+    "Lobo Solitário": {
+      "descricao": "Caminho solitário, poucos conhecem sua verdadeira identidade.",
+      "proficiencias_adicionais": {
+        "armas": [
+          "Armas Marciais"
+        ],
+        "armaduras": [
+          "Armaduras Leves"
+        ]
+      },
+      "habilidades": {
+        "Kuro Duko (Veneno Negro)": "Aprende a criar venenos, adiciona proficiência na CD dos venenos.",
+        "Ataque Extra": "No nível 6, pode realizar dois ataques na ação de ataque.",
+        "Shirogane no Tsubasa (Lâmina de Prata)": "No nível 9, pode tornar uma arma mágica +1 e de prata após 7 dias e 500 po.",
+        "Kôgeki ni Katto (Golpe dos Três Cortes)": "No nível 14, se acertar dois ataques no mesmo alvo, pode usar ação bônus para um ataque extra.",
+        "Totsugeki (Investida)": "No nível 17, pode realizar ataque de oportunidade quando inimigo errar ataque contra ele.",
+        "Hyaku Katto o Utsu (Golpe dos Cem Cortes)": "No nível 20, Golpes Precisos usam dados d12 ao invés de d8."
+      }
+    },
+    "Shinobi": {
+      "descricao": "Ninjas que combinam artes arcanas com combate, mestres da magia.",
+      "atributo_conjuracao": "Inteligência",
+      "magias": {
+        "truques_conhecidos": [
+          "Amigos",
+          "Ilusão Menor"
+        ],
+        "magias_conhecidas": 3,
+        "escolas": [
+          "Encantamento",
+          "Ilusão",
+          "Lista de magias do Shinobi"
+        ],
+        "recuperacao": "Recupera conjurações após descanso longo",
+        "conjuracoes_por_circulo": {
+          "1": [
+            2,
+            3,
+            3,
+            3,
+            4,
+            4,
+            4,
+            4,
+            4,
+            4,
+            4,
+            4,
+            4,
+            4,
+            4,
+            4,
+            4,
+            4,
+            4,
+            4
+          ],
+          "2": [
+            0,
+            0,
+            0,
+            0,
+            2,
+            2,
+            2,
+            3,
+            3,
+            3,
+            3,
+            3,
+            3,
+            3,
+            3,
+            3,
+            3,
+            3,
+            3,
+            3
+          ],
+          "3": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            2,
+            2,
+            2,
+            3,
+            3,
+            3,
+            3,
+            3,
+            3,
+            3
+          ],
+          "4": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            1,
+            1,
+            0,
+            0
+          ]
+        }
+      },
+      "habilidades": {
+        "Conjurador": "Ao 3º nível, pode conjurar magias conforme tabela.",
+        "Reflexo da Lâmina": "Ao 6º nível, pode atacar antes ou depois de conjurar um truque.",
+        "Magia Silenciosa": "Ao 9º nível, pode conjurar magias sem componente verbal.",
+        "Brilho da Lâmina": "Ao 14º nível, pode atacar antes ou depois de conjurar magias até 2º círculo.",
+        "Duplicidade": "Ao 17º nível, pode afetar uma segunda criatura próxima com magias que afetem uma única criatura.",
+        "Encantar Lâmina": "Ao 20º nível, pode encantar uma arma com uma magia de alvo único por 1 minuto; o próximo ataque aplica a magia com vantagens e desvantagens conforme regras."
+      }
+    }
+  },
+  "magias_shinobi": [
+    {
+      "nome": "Obscurecer Faces",
+      "nivel": 1,
+      "escola": "Ilusão",
+      "tempo_conjuracao": "1 ação",
+      "alcance": "Pessoal ou toque",
+      "componentes": [
+        "Verbal",
+        "Somático"
+      ],
+      "duracao": "Concentração, até 1 hora",
+      "descricao": "O rosto do alvo fica obscurecido e indistinto, dificultando sua identificação."
+    },
+    {
+      "nome": "Rastos Falsos",
+      "nivel": 1,
+      "escola": "Ilusão",
+      "tempo_conjuracao": "1 ação",
+      "alcance": "Pessoal",
+      "componentes": [
+        "Somático"
+      ],
+      "duracao": "Concentração, sem limite de tempo",
+      "descricao": "Os rastros do conjurador parecem ser de um animal escolhido."
+    },
+    {
+      "nome": "Encontrar Direção",
+      "nivel": 1,
+      "escola": "Encantamento",
+      "tempo_conjuracao": "1 ação",
+      "alcance": "Pessoal",
+      "componentes": [
+        "Somático"
+      ],
+      "duracao": "Concentração, até 1 hora",
+      "descricao": "Permite ao ninja saber a direção em relação aos pontos cardeais."
+    },
+    {
+      "nome": "Distração",
+      "nivel": 1,
+      "escola": "Ilusão",
+      "tempo_conjuracao": "1 ação",
+      "alcance": "18 metros",
+      "componentes": [
+        "Somático"
+      ],
+      "duracao": "Instantâneo",
+      "descricao": "Cria uma ilusão visual ou auditiva rápida para distrair inimigos."
+    },
+    {
+      "nome": "Sombras Profundas",
+      "nivel": 2,
+      "escola": "Transmutação",
+      "tempo_conjuracao": "10 minutos",
+      "alcance": "Pessoal",
+      "componentes": [
+        "Verbal",
+        "Somático"
+      ],
+      "duracao": "Concentração, até 1 hora",
+      "descricao": "Escurece gradativamente o ambiente ao redor do conjurador."
+    },
+    {
+      "nome": "Pés de Plumas",
+      "nivel": 2,
+      "escola": "Transmutação",
+      "tempo_conjuracao": "1 ação",
+      "alcance": "Pessoal",
+      "componentes": [
+        "Somático"
+      ],
+      "duracao": "Concentração, até 1 minuto",
+      "descricao": "O conjurador pesa tão pouco que se move silenciosamente e não ativa armadilhas de pressão."
+    },
+    {
+      "nome": "Envelhecer Até Destruir",
+      "nivel": 3,
+      "escola": "Transmutação",
+      "tempo_conjuracao": "10 minutos",
+      "alcance": "Toque",
+      "componentes": [
+        "Verbal",
+        "Somático"
+      ],
+      "duracao": "Instantâneo",
+      "descricao": "Envelhece um objeto não vivo não mágico em 100 anos."
+    },
+    {
+      "nome": "Detectar Vida",
+      "nivel": 1,
+      "escola": "Ilusão",
+      "tempo_conjuracao": "1 ação",
+      "alcance": "Pessoal",
+      "componentes": [
+        "Verbal",
+        "Somático"
+      ],
+      "duracao": "Concentração, até 10 minutos",
+      "descricao": "Sente a presença de criaturas vivas até 9 metros, vendo seus contornos."
+    },
+    {
+      "nome": "Forma de Sombras",
+      "nivel": 4,
+      "escola": "Conjuração",
+      "tempo_conjuracao": "1 hora",
+      "alcance": "Pessoal ou toque",
+      "componentes": [
+        "Verbal",
+        "Somático",
+        "Material (folhas secas e roupas)"
+      ],
+      "duracao": "Concentração, até 8 horas",
+      "descricao": "Cria uma cópia perfeita do conjurador feita de sombras que pode agir e lutar, mas não usar habilidades especiais ou magias."
+    }
+  ]
+}

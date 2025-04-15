@@ -93,7 +93,7 @@ def gerar_json_com_llm(texto):
 
 def salvar_json(dados):
     nome = dados.get("nome", "classe_desconhecida").lower().replace(" ", "-")
-    nome_arquivo = f"classe_{nome}.json"
+    nome_arquivo = f"extracted_classes/classe_{nome}.json"
     with open(nome_arquivo, "w", encoding="utf-8") as f:
         json.dump(dados, f, ensure_ascii=False, indent=2)
     print(f"💾 Classe salva em: {nome_arquivo}")
