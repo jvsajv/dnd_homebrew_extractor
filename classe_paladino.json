@@ -1,0 +1,178 @@
+{
+  "nome": "Paladino",
+  "dado_vida": 10,
+  "testes_resistencia": [
+    "Sabedoria",
+    "Carisma"
+  ],
+  "proficiencias": {
+    "armaduras": [
+      "Todas as Armaduras",
+      "Escudos"
+    ],
+    "armas": [
+      "Armas Simples",
+      "Armas Marciais"
+    ],
+    "ferramentas": []
+  },
+  "pericias_opcionais": {
+    "descricao": "Escolha duas entre: Atletismo, Intimidação, Medicina, Persuasão, Religião",
+    "escolher": 2,
+    "opcoes": [
+      "Atletismo",
+      "Intimidação",
+      "Medicina",
+      "Persuasão",
+      "Religião"
+    ]
+  },
+  "equipamento_inicial": [
+    "Uma cota de malha",
+    "Um símbolo sagrado"
+  ],
+  "opcoes_equipamento": [
+    {
+      "descricao": "(a) uma espada longa OU (b) uma arma simples",
+      "opcoes": [
+        [
+          "uma espada longa"
+        ],
+        [
+          "uma arma simples"
+        ]
+      ]
+    },
+    {
+      "descricao": "(a) um escudo OU (b) uma arma de duas mãos",
+      "opcoes": [
+        [
+          "um escudo"
+        ],
+        [
+          "uma arma de duas mãos"
+        ]
+      ]
+    },
+    {
+      "descricao": "(a) um pacote de sacerdote OU (b) um pacote de explorador",
+      "opcoes": [
+        [
+          "um pacote de sacerdote"
+        ],
+        [
+          "um pacote de explorador"
+        ]
+      ]
+    }
+  ],
+  "niveis_classe": "classes/paladino/niveis",
+  "multi_classe": {
+    "requisitos": [
+      "Sabedoria 13",
+      "Carisma 13"
+    ],
+    "proficiencias": [
+      "Armas Simples",
+      "Armas Marciais",
+      "Todas as Armaduras",
+      "Escudos"
+    ]
+  },
+  "subclasses": [
+    "Juramento da Devoção",
+    "Juramento da Vingança",
+    "Juramento do Dragão"
+  ],
+  "descricao": "Paladinos são guerreiros santos que juram defender o bem e a justiça, canalizando o poder divino para proteger os inocentes e punir os malfeitores.",
+  "juramento_do_dragao": {
+    "nome": "Juramento do Dragão",
+    "descricao": "Também chamados Cavaleiros Platinado, os paladinos que fazem esse juramento prometem sua lealdade a Bahamut, o Dragão de Platina, que lhes confere poderes draconianos para defender os dragões metálicos e seus aliados.",
+    "dogmas": [
+      "Sem Medo: Proteja os dragões metálicos, bem como seus aliados.",
+      "Sem Perdão: Não mostre nenhuma piedade para os dragões cromáticos e aqueles que prometem sua fidelidade a eles.",
+      "Sem Desculpas: Seja corajoso e abnegado, ou arrisque a rejeição do Dragão de Platina."
+    ],
+    "magias_de_juramento": {
+      "3": [
+        "órbe cromática",
+        "sono"
+      ],
+      "5": [
+        "flecha ácida de melf",
+        "raio ardente"
+      ],
+      "9": [
+        "convocar relâmpagos",
+        "bola de fogo"
+      ],
+      "13": [
+        "tempestade de gelo",
+        "muralha de fogo"
+      ],
+      "17": [
+        "cone de frio",
+        "coluna de chamas"
+      ]
+    },
+    "canalizar_divindade": {
+      "arma_de_sopro": {
+        "descricao": "Como uma ação, você expeli energia de sua boca determinada pelo tipo de dano escolhido. Cada criatura na área deve fazer um teste de resistência. Dano inicial de 2d6, aumentando com o nível.",
+        "tipos_de_dano": [
+          "Ácido",
+          "Frio",
+          "Fogo",
+          "Elétrico"
+        ],
+        "alcance_e_area": {
+          "Ácido": "1,5 a 9 metros em linha (Teste de resistência Destreza)",
+          "Frio": "4,5 metros em cone (Teste de resistência Constituição)",
+          "Fogo": "4,5 metros em cone (Teste de resistência Destreza)",
+          "Elétrico": "1,5 a 9 metros em linha (Teste de resistência Destreza)"
+        },
+        "dano_por_nivel": {
+          "nível 3": "2d6",
+          "nível 7": "3d6",
+          "nível 14": "4d6",
+          "nível 20": "6d6"
+        },
+        "cd_teste_resistencia": "8 + modificador de Carisma + bônus de proficiência"
+      },
+      "volta_do_dragao": {
+        "descricao": "Como uma ação, você apresenta seu símbolo sagrado. Cada dragão dentro de 9 metros que possa ouvi-lo deve fazer um teste de resistência de Sabedoria ou ficará amedrontado por 1 minuto ou até sofrer dano.",
+        "efeitos": [
+          "Criatura amedrontada tenta se afastar o máximo possível.",
+          "Não pode mover-se para dentro de 9 metros de você por vontade própria.",
+          "Não pode tomar reações.",
+          "Durante a ação, só pode realizar Disparada ou tentar escapar de efeitos que impeçam o movimento.",
+          "Se não houver para onde se mover, pode usar Esquiva.",
+          "Formas verdadeiras escondidas por ilusões ou mudanças são reveladas enquanto amedrontadas."
+        ]
+      }
+    },
+    "aura_de_energia_elemental": {
+      "descricao": "A partir do 7º nível, você e criaturas amigáveis dentro de 3 metros têm resistência contra um tipo de dano escolhido (fogo, frio, elétrico, ácido ou veneno). Pode alternar o tipo como ação bônus.",
+      "alcance_no_18": "O alcance aumenta para 9 metros no 18º nível."
+    },
+    "asas_draconicas": {
+      "descricao": "No 15º nível, você pode manifestar um par de asas de dragão, ganhando deslocamento de voo igual ao seu deslocamento atual. As asas duram até serem descartadas como ação bônus.",
+      "restricoes": [
+        "Não pode manifestar asas usando armaduras, a menos que feitas para acomodá-las.",
+        "Roupas não feitas para acomodar asas podem ser destruídas ao manifestá-las."
+      ]
+    },
+    "cavaleiro_platinado": {
+      "descricao": "No 20º nível, você se torna um farol do Dragão de Platina. Com uma ação, sua pele endurece e sua presença provoca medo nos inimigos por 1 minuto.",
+      "efeitos": [
+        "Emanar aura de ameaça em raio de 9 metros. Inimigos que entrarem ou iniciarem turno na aura devem passar em teste de resistência de Sabedoria ou ficar amedrontados por 1 minuto ou até sofrer dano.",
+        "Golpes contra criaturas amedrontadas têm vantagem.",
+        "Imunidade a um tipo de dano escolhido (fogo, frio, raio, ácido ou veneno).",
+        "Ao usar Arma de Sopro, causa 2d8 de dano adicional do tipo escolhido."
+      ],
+      "restricao_uso": "Pode ser usado uma vez por descanso longo."
+    },
+    "opcao_tiamat": {
+      "descricao": "Alternativamente, o juramento pode ser ajustado para Tiamat ou outra divindade dragão, invertendo os princípios e podendo alterar nomes de recursos."
+    }
+  }
+}

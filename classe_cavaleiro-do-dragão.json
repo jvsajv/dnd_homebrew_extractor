@@ -1,0 +1,310 @@
+{
+  "nome": "Cavaleiro do Dragão",
+  "dado_vida": 8,
+  "testes_resistencia": [
+    "Força",
+    "Constituição"
+  ],
+  "proficiencias": {
+    "armaduras": [
+      "Todas as Armaduras",
+      "Escudos"
+    ],
+    "armas": [
+      "Armas Simples",
+      "Armas Marciais"
+    ],
+    "ferramentas": []
+  },
+  "pericias_opcionais": {
+    "descricao": "Escolha duas entre: Acrobacia, Atletismo, Atuação, Investigação, Intimidação, Lidar com Animais, Natureza, Percepção ou Sobrevivência.",
+    "escolher": 2,
+    "opcoes": [
+      "Acrobacia",
+      "Atletismo",
+      "Atuação",
+      "Investigação",
+      "Intimidação",
+      "Lidar com Animais",
+      "Natureza",
+      "Percepção",
+      "Sobrevivência"
+    ]
+  },
+  "equipamento_inicial": [],
+  "opcoes_equipamento": [
+    {
+      "descricao": "(a) uma arma marcial e um escudo OU (b) duas armas marciais",
+      "opcoes": [
+        [
+          "uma arma marcial",
+          "um escudo"
+        ],
+        [
+          "duas armas marciais"
+        ]
+      ]
+    },
+    {
+      "descricao": "(a) cota de talas OU (b) couro batido",
+      "opcoes": [
+        [
+          "cota de talas"
+        ],
+        [
+          "couro batido"
+        ]
+      ]
+    },
+    {
+      "descricao": "(a) um pacote de aventureiro OU (b) um pacote de explorador",
+      "opcoes": [
+        [
+          "pacote de aventureiro"
+        ],
+        [
+          "pacote de explorador"
+        ]
+      ]
+    },
+    {
+      "descricao": "(a) 2 dardos OU (b) um arco longo e uma aljava com 20 flechas",
+      "opcoes": [
+        [
+          "2 dardos"
+        ],
+        [
+          "um arco longo",
+          "uma aljava com 20 flechas"
+        ]
+      ]
+    }
+  ],
+  "niveis_classe": "classes/cavaleiro_do_dragao/niveis",
+  "multi_classe": {
+    "requisitos": [
+      "Força 13 OU Destreza 13",
+      "Carisma 15"
+    ],
+    "proficiencias": [
+      "Todas as Armaduras",
+      "Escudos"
+    ]
+  },
+  "subclasses": [
+    "Senhor do Sangue",
+    "Matador de Dragão",
+    "Dragoon"
+  ],
+  "descricao": "O Cavaleiro do Dragão é um guerreiro que forja uma conexão simbiótica com um dragão, ganhando poderes e habilidades inspirados na criatura. São conhecidos por sua coragem, força e liderança, podendo ser salvadores ou vilões. Eles compartilham pontos de vida com seu dragão e comandam suas ações em combate, além de possuir estilos de luta únicos e habilidades especiais relacionadas ao seu companheiro dracônico.",
+  "estilos_de_luta": [
+    {
+      "nome": "Elegante",
+      "descricao": "Quando você ataca um inimigo a menos de 10 metros, pode fazer um teste de Intimidação ou Atuação contra a Sabedoria dele. Se falhar, ele foca em você, dando desvantagem no próximo ataque contra outro alvo. Você também recebe o talento Duelista Defensivo."
+    },
+    {
+      "nome": "Estrategista",
+      "descricao": "Uma vez por encontro, faça um teste de conhecimento (Arcanismo, História, Natureza ou Religião) contra um inimigo específico. Se passar, ganha bônus de +1 em CA, testes de resistência, ataque e dano contra esse inimigo. Você também recebe o talento Alerta."
+    },
+    {
+      "nome": "Brutal",
+      "descricao": "Quando seus ataques físicos acertam, pode forçar o alvo a fazer um teste de Força (CD 8 + mod Força + proficiência). Se falhar, você pode mover o alvo 1,5 m em qualquer direção. Você também recebe o talento Mestre das Armas Grandes."
+    },
+    {
+      "nome": "Dançarino",
+      "descricao": "Quando um ataque corpo a corpo erra contra você, pode usar sua reação para atacar o alvo. Você também recebe o talento Mobilidade."
+    },
+    {
+      "nome": "Carregador",
+      "descricao": "Quando você usa Disparada (Dash) e ataca no mesmo turno, ou ataca após mover pelo menos metade do seu deslocamento, ganha vantagem no ataque. Você também recebe o talento Investida Poderosa."
+    },
+    {
+      "nome": "Veloz",
+      "descricao": "Enquanto estiver empunhando duas armas corpo a corpo, ganha +2 na CA. Você também recebe o talento Ambidestro."
+    },
+    {
+      "nome": "Afastado",
+      "descricao": "Ao usar uma arma de longo alcance, ganha +2 nas jogadas de ataque e dano. Você também recebe o talento Atirador Aguçado."
+    }
+  ],
+  "caracteristicas_classe": {
+    "1": [
+      "Obter o dragão",
+      "Estilo de Luta"
+    ],
+    "2": [
+      "Direção do Senhor"
+    ],
+    "3": [
+      "Ataque de Sopro",
+      "Escolha do Senhor do Dragão"
+    ],
+    "4": [
+      "Incremento no Valor de Habilidade"
+    ],
+    "5": [
+      "Coração do Dragão",
+      "Ataque Extra"
+    ],
+    "6": [
+      "Sentidos de Dragão"
+    ],
+    "7": [
+      "Característica do Senhor do Dragão"
+    ],
+    "8": [
+      "Incremento no Valor de Habilidade"
+    ],
+    "9": [
+      "Rugido do Medo"
+    ],
+    "10": [
+      "Característica do Senhor do Dragão"
+    ],
+    "11": [
+      "Fortitude Dracônica"
+    ],
+    "12": [
+      "Incremento no Valor de Habilidade",
+      "Legado do Dragão"
+    ],
+    "13": [
+      "Arte do Cavaleiro"
+    ],
+    "14": [
+      "Assalto do Dragão",
+      "Característica do Senhor do Dragão"
+    ],
+    "15": [
+      "Resistência Lendária"
+    ],
+    "16": [
+      "Incremento no Valor de Habilidade",
+      "Ataque Extra"
+    ],
+    "17": [
+      "Característica do Senhor do Dragão"
+    ],
+    "18": [
+      "Incremento no Valor de Habilidade"
+    ],
+    "19": [
+      "Incremento no Valor de Habilidade"
+    ],
+    "20": [
+      "Semelhança Dracônica"
+    ]
+  },
+  "senhores_do_dragao": {
+    "Senhor do Sangue": {
+      "descricao": "Conexão profunda com o dragão, ganhando fortitude e habilidades especiais.",
+      "nivels": {
+        "3": "Ganha 3 pontos de vida adicionais e proficiência dobrada em testes de Constituição ou Força.",
+        "7": "Ataque de Antimagia: abençoa armas para impedir lançadores de feitiços.",
+        "10": "Escamas de Dragão: +1 CA e imunidade ao elemento do dragão.",
+        "15": "Vôo Mítico: transforma um manto em asas de dragão para voar por 1 hora.",
+        "18": "Lâmina do Dragão: adiciona 3d6 de dano elemental ao atacar."
+      }
+    },
+    "Matador de Dragão": {
+      "descricao": "Especialista em combater dragões, usando sua força e magia contra eles.",
+      "nivels": {
+        "3": "Combustível do Matador: ganha pontos de vida temporários ao sofrer dano elemental.",
+        "7": "Expulsão Dracônica: pode usar o ataque de respiração do dragão como ação.",
+        "10": "Intensidade Inigualável: ataque de respiração ignora resistência e imunidade.",
+        "15": "Interferência Lendária: pode cancelar ações lendárias inimigas próximas.",
+        "18": "Fúria do Dragão: funde-se com o dragão, ganhando dano extra e ignorando resistências."
+      }
+    },
+    "Dragoon": {
+      "descricao": "Conjurador que domina magias e técnicas de combate inspiradas em dragões.",
+      "nivels": {
+        "3": "Arte da Guerra: treinamento em armas específicas e talentos marciais.",
+        "7": "Magia do Dragão: lança feitiços baseados no tipo de dragão uma vez por descanso.",
+        "10": "(não especificado no texto)",
+        "15": "(não especificado no texto)",
+        "18": "(não especificado no texto)"
+      },
+      "especializacoes_combate": [
+        "Dança do Esmagamento (Espadas / Martelos)",
+        "Golpe Cruzado (Espadas / Machados)",
+        "Bastão Giratório (Bordões)",
+        "Tiro de Alfinete (Combate à Distância)",
+        "Agitação de Estige (Desarmado)",
+        "Triturador de Ossos (Duas Mãos)"
+      ]
+    }
+  },
+  "dragao": {
+    "descricao": "Companheiro dracônico do Cavaleiro, com estatísticas e habilidades próprias que evoluem conforme o nível do cavaleiro.",
+    "estatisticas_iniciais": {
+      "pontuacoes": [
+        12,
+        12,
+        11,
+        10,
+        10,
+        8
+      ],
+      "proficiencias": {
+        "pericias": 2,
+        "testes_resistencia": [
+          "Destreza",
+          "Constituição",
+          "Sabedoria"
+        ]
+      },
+      "classe_armadura": "13 + Modificador de Destreza + Bônus de Nível",
+      "pontos_vida": "8 + Modificador de Constituição + Nível (1d8 + Mod Con)",
+      "velocidade_base": "9 metros"
+    },
+    "ataques": {
+      "mordida": {
+        "tipo": "Perfurante",
+        "alcance": "1,5 m (aumenta para 3 m no nível 7 e 4,5 m no nível 20)"
+      },
+      "garras": {
+        "tipo": "Cortante",
+        "alcance": "1,5 m (aumenta para 3 m no nível 20)"
+      },
+      "cauda": {
+        "tipo": "Concussão",
+        "alcance": "4,5 m (aumenta para 6 m no nível 20)",
+        "teste_esquiva": "Destreza"
+      }
+    },
+    "tamanhos": [
+      "Miúdo",
+      "Pequeno",
+      "Médio",
+      "Grande",
+      "Enorme"
+    ],
+    "restricoes_pontuacoes": {
+      "Miúdo e Pequeno": 24,
+      "Grande": 26,
+      "Enorme": 28
+    },
+    "caracteristicas": {
+      "Ecoando a Voz": "Voz do dragão pode ser ouvida a até 1,5 km (tamanho mínimo grande).",
+      "Proficiente": "Você e seu dragão escolhem 1 habilidade para ganhar proficiência.",
+      "Língua": "Você e seu dragão aprendem um novo idioma.",
+      "Visão": "Visão no escuro de 18 m na primeira escolha, visão cega de 3 m na segunda.",
+      "Anfíbio": "Pode respirar debaixo d'água.",
+      "Caminhada no Gelo": "Movimenta-se em gelo e neve sem penalidades.",
+      "Rápido": "Aumenta velocidade de caminhada em 10 pés.",
+      "Nadador": "Ganha velocidade de nado igual à caminhada.",
+      "Voar": "Você e seu dragão ganham voo com velocidade dupla da caminhada.",
+      "Escavar": "Ganha velocidade de escavação igual à caminhada.",
+      "Imunidade": "Ganha imunidade a uma condição (encantado, exausto, assustado ou paralisado)."
+    },
+    "traços_maiores": [
+      "Talento: dragão ganha um talento qualificado.",
+      "Resistência: proficiência em teste de Inteligência ou Carisma.",
+      "Conjurador: aprende feitiço da lista de feiticeiros, recarregado após descanso.",
+      "Mudar de Forma: polimorfia em humanóide ou besta com nível de desafio até 1/4 do nível do cavaleiro.",
+      "Discurso Hipnótico: pode encantar criaturas não hostis com teste de resistência."
+    ],
+    "sopro_especial": "Pode escolher um sopro especial que causa efeitos variados em testes de Constituição falhos."
+  }
+}
